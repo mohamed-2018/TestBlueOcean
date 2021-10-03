@@ -3,7 +3,11 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'Buld Completed'
+        retry(count: 3) {
+          sh 'lmcwlqwmwql'
+        }
+
+        echo 'Build Completed'
       }
     }
 
